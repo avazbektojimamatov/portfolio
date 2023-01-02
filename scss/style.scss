@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing:border-box;
+}
+
+$siteColor: #f9004d;
+$bg-color-1: #191919;
+$bg-color-2: #101010;
+
+@import "hero";
+@import "about";
+@import "service";
+@import "footer";
+@import "mixins";
+
+
+
+
+
+
+
+

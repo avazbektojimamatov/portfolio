@@ -1,0 +1,270 @@
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 45px;
+        padding-left: 8%;
+        padding-right: 8%;
+
+        i{
+            font-size: 30px;
+            display: none;
+            color: $siteColor;
+        }
+
+        .logo{
+            color:white;
+            font-size: 35px;
+            letter-spacing: 1px;
+            cursor: pointer;
+    
+            span{
+                color: $siteColor;
+            }
+        }
+
+        .nav-bar li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 25px;
+
+            a{
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                text-transform: capitalize;
+
+                &:hover{
+                    color: $siteColor;
+                    transition: .5s;
+                }
+            }
+        }
+
+        .nav-bar .btn{
+            background-color: $siteColor;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 30px;
+            transition: transform .4s;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .content{
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        transform: translateY(-50%);
+
+        h1{
+            color: white;
+            margin: 20px 0px 20px;
+            font-size: 75px;
+        }
+        h3{
+            color: white;
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+        h4{
+            color: #fcfc;
+            letter-spacing: 2px;
+            font-size: 20px;
+        }
+
+        .newsletter form{
+            width: 380px;
+            max-width: 100%;
+            position: relative;
+
+            input:first-child{
+                display: inline-block;
+                width: 100%;
+                padding: 14px 130px 14px 15px;
+                border: 2px solid $siteColor;
+                outline: none;
+                border-radius: 30px;
+            }
+            input:last-child{
+                position: absolute;
+                display: inline-block;
+                outline: none;
+                border: none;
+                padding: 10px 30px;
+                border-radius: 30px;
+                background-color: $siteColor;
+                color: white;
+                box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+                top: 6px;
+                right: 6px;
+              }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 1140px){
+   .hero{
+    .nav-bar{
+        position: absolute;
+        display: none;
+        justify-content: center;
+        width: 30vw;
+        height: 50vh;
+        top: 90px;
+        right: 8%;
+        background-color: $bg-color-1;
+        opacity: 80%;
+        font-size: 15px;
+        transition: .4s;
+
+        ul{
+            width: 100%;        
+            line-height: 45px;    
+
+            li{
+                text-align: center;
+                display: block;
+                font-size: 20px;
+                width: 100%;
+            }   
+            
+        }
+    }
+
+    nav i{
+        display: block;
+        cursor: pointer;
+    }
+   }
+}
+
+@media only screen and (max-width: 810px){
+    .hero{
+        .content{
+            h1{
+                font-size: 60px;
+            }
+            h3{
+                font-size: 20px;
+            }
+            h4{
+                font-size: 17px;
+            }
+
+            .newsletter form{
+                width: 300px;
+
+                input:first-child{
+                    padding: 10px 110px 10px 10px;
+                    border: 2px solid $siteColor;
+                    border-radius: 30px;
+                }
+                input:last-child{
+                    padding: 7px 25px;
+                    border-radius: 30px;
+                    top: 5px;
+                    right: 5px;
+                  } 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .hero{
+        background-image: url(../img/main-img.jpg);
+        nav .logo{
+            font-size: 28px;
+        }
+
+        nav i{
+            font-size: 25px;
+        }
+        
+        .nav-bar{
+            width: 100vw;
+            right: 0;
+            left: 0;
+            background-color: $bg-color-1;
+            opacity: 90%;
+            z-index: 1;
+    
+            
+        }
+
+        .content{
+            h1{
+                font-size: 50px;
+            }
+            h3{
+                font-size: 15px;
+            }
+            h4{
+                font-size: 14px;
+            }
+
+            .newsletter form{
+                width: 250px;
+
+                input:first-child{
+                    padding: 7px 90px 7px 7px;
+                    border: 2px solid $siteColor;
+                    border-radius: 30px;
+                }
+                input:last-child{
+                    padding: 5px 17px;
+                    border-radius: 30px;
+                    top: 4px;
+                    right: 4px;
+                  } 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .hero{
+        .content{
+            h1{
+                font-size: 40px;
+            }
+            h3{
+                font-size: 12px;
+            }
+            h4{
+                font-size: 12px;
+            }
+
+            .newsletter form{
+                width: 200px;
+
+                input:first-child{
+                    padding: 7px 90px 7px 7px;
+                    border: 2px solid $siteColor;
+                    border-radius: 30px;
+                } 
+                input:last-child{
+                    padding: 5px 17px;
+                    border-radius: 30px;
+                    top: 4px;
+                    right: 4px;
+                  } 
+            }
+        }
+    }
+}
