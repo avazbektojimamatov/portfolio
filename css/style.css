@@ -183,7 +183,7 @@
 }
 @media only screen and (max-width: 550px) {
   .hero {
-    background-image: url(../img/main-img.jpg);
+    background-image: url(../img/main.jpg);
   }
   .hero nav .logo {
     font-size: 28px;
